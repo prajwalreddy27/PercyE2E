@@ -23,8 +23,6 @@
     "babel-polyfill": "^6.3.14",
     "classnames": "^2.1.2",
     "@percy/cli": "^1.26.0",
-    "@percy-io/percy-storybook": "^2.1.0",
-    "percy": "^5.0.0",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
     "react-redux": "^4.2.1",

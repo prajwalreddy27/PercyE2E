@@ -23,6 +23,8 @@ pipeline {
                 // }
                 // browserStackReportPublisher 'automate'
                 echo 'welcome to test'
+                sh 'npm install'
+                sh 'npm run test'
             }
         }
         stage('Deploy') { 
