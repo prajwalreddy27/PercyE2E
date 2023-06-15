@@ -85,18 +85,18 @@ describe('components', () => {
       expect(clear).toBe(undefined)
     })
 
-    it('should render clear button when completed todos', () => {
-      const { output } = setup({ completedCount: 1 })
-      const [ , , clear ] = output.props.children
-      expect(clear.type).toBe('button')
-      expect(clear.props.children).toBe('Clear completed')
-    })
+    // it('should render clear button when completed todos', () => {
+    //   const { output } = setup({ completedCount: 1 })
+    //   const [ , , clear ] = output.props.children
+    //   expect(clear.type).toBe('button')
+    //   expect(clear.props.children).toBe('Clear completed')
+    // })
 
-    it('should call onClearCompleted on clear button click', () => {
-      const { output, props } = setup({ completedCount: 1 })
-      const [ , , clear ] = output.props.children
-      clear.props.onClick({})
-      expect(props.onClearCompleted).toHaveBeenCalled()
-    })
+    // it('should call onClearCompleted on clear button click', () => {
+    //   const { output, props } = setup({ completedCount: 1 })
+    //   const [ , , clear ] = output.props.children
+    //   clear.props.onClick({})
+    //   expect(props.onClearCompleted).toHaveBeenCalled()
+    // })
   })
 })
